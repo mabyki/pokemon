@@ -1,0 +1,110 @@
+/*Favorite*/
+
+.favorite_container{
+    width: 90%;
+    max-width: 1000px;
+    max-height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+  }
+  
+  .favorite_card_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  
+  .favorite_card_container img{
+    width: 150px;
+  }
+  
+  .favorite_card_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    text-transform: capitalize;
+  }
+  
+  .favorite_card_info_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .favorite_card_info_text .favorite_id_pokemon{
+    text-align: start;
+    font-size: 30px;
+    width: 120px;
+  }
+  
+  .favorite_card_info_text .favorite_name{
+    font-size: 20px;
+  }
+  
+  .favorite_card_info .favorite_type{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .favorite_btn_del{
+    width: 150px;
+    margin-right: 10px;
+    padding: 5px 0;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  
+  .favorite_btn_del span{
+    position: relative;
+    z-index: 50;
+  }
+  
+  .favorite_btn_del::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: #ff2525;
+    transition: 0.3s;
+    z-index: 49;
+  }
+  
+  .favorite_btn_del::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: #ff2525;
+    transition: 0.3s;
+    z-index: 49;
+  }
+  
+  .favorite_btn_del:hover::before{
+    width: 55%;
+  }
+  
+  .favorite_btn_del:hover::after{
+    width: 55%;
+  }

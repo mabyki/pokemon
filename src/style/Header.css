@@ -1,0 +1,101 @@
+/*Header*/
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 0;
+  }
+  .header .logo_img{
+    width: 100%;
+    margin-left: -5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+    border-radius: 5px;
+  }
+  .header_navbar{
+    margin-right: -5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border-radius: 5px;
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+  }
+  
+  .header_navbar li{
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+  }
+  .header_navbar li:nth-last-child(1){
+    margin: 0;
+  }
+  .header_navbar li::before{
+    content: url(../img/menu_pika.png);
+    margin-right: 10px;
+  }
+  .header_navbar li:nth-child(2):before{
+    content: url(../img/menu_pokedex.png);
+    margin-right: 10px;
+  }
+  .header_navbar li:nth-child(3):before{
+    content: url(../img/menu_tail.png);
+    margin-right: 10px;
+  }
+  .header_navbar li:nth-child(4):before{
+    content: url(../img/menu_search.png);
+    margin-right: 10px;
+  }
+  
+  .header_navbar li a{
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: #f0f0f0;
+    color: #ff0000;
+    border-radius: 15px;
+  }
+  
+  .header_navbar li .active{
+    color: #ffffff;
+    background-color: #ff0000;
+  }
+
+  .header_navbar_burger{
+    padding: 120px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 9998;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid #000;
+}
+.header_navbar_burger li a{
+  color: rgb(255, 217, 0);
+  text-shadow: 0 0 2px #006eff,
+               0 0 2px #006eff,
+               0 0 2px #006eff,
+               0 0 2px #006eff,
+               0 0 2px #006eff;
+}
+.burger_menu img{
+    width: 40px;
+    position: fixed;
+    right: 80px;
+    top: 50px;
+    z-index: 9999;
+}

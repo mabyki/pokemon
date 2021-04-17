@@ -1,0 +1,11 @@
+/* Main */
+
+.main{
+    margin-top: 10px;
+  }
+
+.main .welcome_page{
+  font-size: 20px;
+  padding: 40px 40px 0;
+  overflow: auto;
+}

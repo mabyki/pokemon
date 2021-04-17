@@ -1,0 +1,203 @@
+
+@media (max-width: 950px){
+    .pokemon_card_all{
+        flex-direction: column;
+        gap: 30px;
+      }
+    .add_favorite{
+        margin: 10px auto 0px;
+    }
+}
+@media(max-height: 850px){
+    .pokemon_card_container{
+        max-height: 550px;
+      }
+    .pokedex_container{
+        max-height: 600px;
+    }
+    .favorite_container{
+        max-height: 600px;
+    }
+    .welcome_page{
+        max-height: 600px;
+    }
+}
+@media(max-height: 800px){
+    .pokemon_card_container{
+        max-height: 520px;
+      }
+    .pokedex_container{
+        max-height: 550px;
+    }
+    .favorite_container{
+        max-height: 550px;
+    }
+    .welcome_page{
+        max-height: 550px;
+    }
+}
+@media(max-height: 750px){
+    .pokemon_card_container{
+        max-height: 460px;
+      }
+      .pokedex_container{
+        max-height: 500px;
+    }
+    .favorite_container{
+        max-height: 500px;
+    }
+    .welcome_page{
+        max-height: 500px;
+    }
+}
+@media(max-height: 700px){
+    .pokemon_card_container{
+        max-height: 400px;
+    }
+    .pokedex_container{
+        max-height: 400px;
+    }
+    .favorite_container{
+        max-height: 400px;
+    }
+    .welcome_page{
+        max-height: 400px;
+    }
+}
+@media(max-height: 650px){
+    .pokemon_card_container{
+        max-height: 350px;
+    }
+    .pokedex_container{
+        max-height: 350px;
+    }
+    .favorite_container{
+        max-height: 350px;
+    }
+    .welcome_page{
+        max-height: 350px;
+    }
+}
+@media(max-height: 600px){
+    .pokemon_card_container{
+        max-height: 340px;
+    }
+    .pokedex_container{
+        max-height: 340px;
+    }
+    .favorite_container{
+        max-height: 340px;
+    }
+    .welcome_page{
+        max-height: 340px;
+    }
+}
+@media(max-height: 550px){
+    .pokemon_card_container{
+        max-height: 270px;
+    }
+      .pokedex_container{
+        max-height: 270px;
+    }
+    .favorite_container{
+        max-height: 270px;
+    }
+    .welcome_page{
+        max-height: 270px;
+    }
+}
+@media (max-width: 850px){
+    .favorite_card_container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+    .favorite_card_info{
+        align-items: center;
+        gap: 0;
+    }
+    .favorite_card_info_text{
+        gap: 0;
+    }
+    .favorite_card_info .favorite_type{
+        justify-content: center;
+    }
+    .favorite_btn_del{
+        margin-right: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+}
+
+@media (max-width: 560px){
+    .header .logo_img{
+        width: 100%;
+        max-width: 200px;
+        margin-left: 0;
+        padding: 5px 5px;
+    }
+    .pokedex_container{
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 10px 10px 5px;
+    }
+    .pokedex_card_container{
+        width: 450px;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pokedex_card_container img{
+        max-width: 200px;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .pokedex_card_info{
+        width: 90%;
+        margin: 0;
+        margin-right: 0;
+    }
+    .pokedex_card_container .name{
+        left: 0;
+    }
+    .pokemon_slider_item.active{
+        transform: scale(1.1) translateX(45%) translateY(-45%);
+    }
+    .pokemon_slider_item.prev{
+        right: 65%;
+    }
+    .pokemon_slider_item.next{
+        right: 36%;
+    }
+    .pokemon_card_all .pokemon_card_img img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .pokemon_slider_item.active{
+        transform: scale(1) translateX(50%) translateY(-50%);
+    }
+    .pokemon_slider_item.prev{
+        right: 57%;
+        opacity: 0.8;
+    }
+    .pokemon_slider_item.next{
+        right: 43%;
+        opacity: 0.8;
+    }
+    .burger_menu img{
+        right: 40px;
+    }
+    .header_navbar_burger{
+        width: 130px;
+    }
+    .pokemon_card_all .pokemon_card_img img{
+        width: 250px;
+    }
+}

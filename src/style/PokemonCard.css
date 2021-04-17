@@ -1,0 +1,122 @@
+/*Pokemon card*/
+
+.pokemon_card_container{
+    width: 95%;
+    max-height: 700px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  
+  .pokemon_card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pokemon_card .name{
+    font-size: 54px;
+    text-transform: capitalize;
+  }
+  
+  .pokemon_card_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  .pokemon_card_all .pokemon_card_img img{
+    filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.7));
+  }
+  
+  .pokemon_card_all_info{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    text-transform: capitalize;
+  }
+  
+  .pokemon_card_all_info .characteristics{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon_card_all_info .types{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon_card_all_info .abilities{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon_card_all_info .stats{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon_card_all_info .card_info_name{
+    padding: 0 10px;
+    font-size: 26px;
+    background-color: #71d2ff;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add_favorite{
+    width: 150px;
+    padding: 5px 0;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    position: relative;
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .add_favorite span{
+    position: relative;
+    z-index: 50;
+  }
+  
+  .add_favorite::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: #00ffaa;
+    transition: 0.3s;
+    z-index: 49;
+  }
+  
+  .add_favorite::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: #00ffaa;
+    transition: 0.3s;
+    z-index: 49;
+  }
+  
+  .add_favorite:hover::before{
+    width: 55%;
+  }
+  
+  .add_favorite:hover::after{
+    width: 55%;
+  }
